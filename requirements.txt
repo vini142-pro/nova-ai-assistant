@@ -1,0 +1,6 @@
+python-dotenv
+google-genai
+pyttsx3
+SpeechRecognition[audio]
+fastapi
+uvicorn[standard]

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Voice + Chat Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <header class="app-header">
+            <div class="assistant-icon">✦</div>
+
+            <div class="header-info">
+                <h1>Nova AI</h1>
+                <p><span class="status-dot"></span> Your personal AI assistant</p>
+            </div>
+
+            <div class="header-badge">GEMINI AI</div>
+        </header>
+
+        <main class="chat-container">
+
+            <div class="welcome-section" id="welcomeSection">
+                <div class="welcome-icon">✦</div>
+                <h2>Hey there! 👋</h2>
+                <p>I'm Nova, your AI assistant. What can I help you with today?</p>
+
+                <div class="suggestion-list">
+                    <button class="suggestion" data-message="Explain artificial intelligence simply">
+                        ✨ Explain AI simply
+                    </button>
+
+                    <button class="suggestion" data-message="Give me a fun coding challenge">
+                        💻 Coding challenge
+                    </button>
+
+                    <button class="suggestion" data-message="Help me plan my day">
+                        📅 Plan my day
+                    </button>
+                </div>
+            </div>
+
+            <div class="messages" id="messages"></div>
+
+        </main>
+
+        <div class="typing-indicator" id="typingIndicator" hidden>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>Nova is thinking...</p>
+        </div>
+
+        <footer class="chat-footer">
+            <form id="chatForm" class="input-area">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Message Nova..."
+                    rows="1"
+                    aria-label="Type your message"
+                ></textarea>
+
+                <button type="button" id="voiceButton" class="voice-button" title="Talk to Nova" aria-label="Talk to Nova">
+                    🎙️
+                </button>
+
+                <button type="submit" id="sendButton" class="send-button" aria-label="Send message">
+                    ➤
+                </button>
+
+            </form>
+
+            <p class="footer-note">
+                Powered by Gemini · Your AI companion for learning and creating
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
